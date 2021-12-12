@@ -241,7 +241,7 @@
                                 <div class="col-6">
                                     <div class="row form-group">
                                     <div class="col-1 col-md-2 "><label for="select" class=" form-control-label">Estado:</label></div>
-                                    <div class="col-1 col-md-4">
+                                    <div class="col-1 col-md-5">
                                         <select name="select" id="select" class="form-control">
                                             <option value="">Estado</option>
                                             <option value="1">Venta Directa</option>
@@ -253,11 +253,20 @@
                                         </select> 
                                         <br><br><br>
                                         </div>
+                                        <div>
+                                            <a href="#" title="Editar" class="btn-sm" data-toggle="modal" data-target="#Estados"><i class="fa fa-question-circle fa-2x"></i></a></div>
                                     </div>
                                  </div>     
                             </div>
                         </form>
                     </div>
+            </div>
+            <div class="col-1">                                 
+                <div class="page-header float-right">
+                    <ol class="breadcrumb text-right">
+                        <a href="#"  title="Descargar Excel" class="btn btn-secondary btn-sm" data-toggle="modal" data-target=".bd-example-modal-sm"><i class="fa fa-print fa-3x"></i></a>
+                    </ol>                            
+                </div>
             </div>
             <div class="animated fadeIn">
                 <div class="row">
@@ -371,7 +380,77 @@
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
+                    <div class="modal fade" id="Estados" tabindex="3" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                
+                                <div class="modal-body">
+                                    <table class="table table-striped ">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Estado</th>
+                                            <th scope="col" colspan="8">Descripcion</th>
+                                            <th scope="col">Tipo</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            
+                                            <td>Venta Directa</td>
+                                            <td colspan="8">El cliente compray se lleva sus articulos</td>
+                                            <td>Venta Directa </td>
+                                          </tr>
+                                          <tr>
+                                           
+                                            <td>Solicitado</td>
+                                            <td colspan="8">Compra a domicilio y se realiza el pedido</td>
+                                            <td>Domicilio</td>
+                                          </tr>
+                                          <tr>
+                                            
+                                            <td>En Proceso</td>
+                                            <td colspan="8">El pedido se esta empacando</td>
+                                            <td>Domicilio</td>
+                                          </tr>
+                                          <tr>
+                                            
+                                            <td>Por Despachar</td>
+                                            <td colspan="8">Esta listo para despachar</td>
+                                            <td>Domicilio</td>
+                                          </tr>
+                                          <tr>
+                                            
+                                            <td>Enviado</td>
+                                            <td colspan="8">Esta despachado al cliente</td>
+                                            <td>Domicilio</td>
+                                          </tr>
+                                          <tr>
+                                            
+                                            <td>Vendido</td>
+                                            <td colspan="8">El pedido fue entregado y se reciio el pago</td>
+                                            <td>Domicilio/venta directa</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                                <div class="modal-footer">
+                                    
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content bg-success">
+                                 <label>Se esta Imprimiendo el recibo del pedido  <i class="fa fa-download"></i></label> 
+                            </div>
+                        </div>
+                </div>
                 </div>
             </div><!-- .animated -->
         </div><!-- .content -->
