@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ela Admin - HTML5 Admin Template</title>
+    <title>Mersoft</title>
     <meta name="description" content="Ela Admin - HTML5 Admin Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -62,8 +62,8 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon ti-package"></i>Ventas</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="menu-icon fa fa-users"></i><a href="clientes.html">Clientes</a></li>
-                            <li><i class="menu-icon fa fa-shopping-cart"></i><a href="Pedidos.html">Pedidos</a></li>
-                            <li><i class="ti-money"></i><a href="Ventas-Dev.html">Ventas</a></li>
+                            <li><i class="menu-icon fa fa-shopping-cart"></i><a href="#">Pedidos</a></li>
+                            <li><i class="ti-money"></i><a href="#">Ventas</a></li>
                         </ul>
                     </li>                  
                     <li class="menu-title">Extras</li><!-- /.menu-title -->
@@ -203,10 +203,8 @@
                             <div class="page-title">
                                 <ol class="breadcrumb text-right">
                                     <li><a href="index.html">Menú</a></li>
-                                    <li><a href="#">Compras</a></li>
-                                    <li><a href="compras.html">Compras </a></li>
-                                    <li><a href="compras-agregar.html">Compra Agregar</a></li>
-                                    <li class="active">Compra Editar Producto</li>
+                                    <li><a href="Usuarios.html">Usuarios</a></li>
+                                    <li class="active">Usuarios Editar</li>
                                 </ol>
                             </div>
                         </div>
@@ -222,47 +220,48 @@
                     <div class="col-lg-12">
                         <div class="card">
                             <div class="card-header">
-                                <strong>Editar producto de la compra</strong> 
+                                <strong>Editar Usuario</strong> 
                             </div>
                             <div class="card-body card-block">
                                 <form action="#" method="post" class="form-horizontal">
                                     <div class="row form-group">
                                         <div class="col-1 col-md-4 "></div><br>
-                                        <div class="col-1 col-md-2 "><label for="hf-email" class=" form-control-label">Cantidad:</label></div>
-                                        <div class="col-1 col-md-3"><input type="text" id="text-input" name="text-input" placeholder="3" class="form-control"></div>
+                                        <div class="col-1 col-md-1 "><label for="hf-email" class=" form-control-label">Nombre:</label></div>
+                                        <div class="col-1 col-md-2"><input type="text" id="text-input" name="text-input" placeholder="Carmen" class="form-control"></div>
                                     </div>
                                     <div class="row form-group">
                                         <div class="col-1 col-md-4 "></div>
-                                        <div class="col-1 col-md-2 "><label for="hf-email" class=" form-control-label">Producto:</label></div>
-                                        <div class="col-1 col-md-3"><input type="text" id="text-input" name="text-input" placeholder="Aceite pequeño" class="form-control"></div>
+                                        <div class="col-1 col-md-1 "><label for="hf-email" class=" form-control-label">Apellido:</label></div>
+                                        <div class="col-1 col-md-2"><input type="text" id="text-input" name="text-input" placeholder="Zuleta Montoya" class="form-control"></div>
                                     </div>
                                     <div class="row form-group">
                                         <div class="col-1 col-md-4 "></div>
-                                        <div class="col-1 col-md-2 "><label for="hf-email" class=" form-control-label">Valor c/u:</label></div>
-                                        <div class="col-1 col-md-3"><input type="text" id="text-input" name="text-input" placeholder="2.200" class="form-control" readonly></div>
+                                        <div class="col-1 col-md-1 "><label for="hf-email" class=" form-control-label">Rol:</label></div>
+                                        <div class="col-1 col-md-2"><input type="text" id="text-input" name="text-input" placeholder="Administrador" class="form-control"></div>
+                                    </div>
+                                    
+                                    <div class="row form-group">
+                                        <div class="col-1 col-md-4 "></div>
+                                        <div class="col-1 col-md-1 "><label for="hf-email" class=" form-control-label">Correo:</label></div>
+                                        <div class="col-1 col-md-2"><input type="text" id="text-input" name="text-input" placeholder="Carmen@gmail.com" class="form-control"></div>
                                     </div>
                                     <div class="row form-group">
                                         <div class="col-1 col-md-4 "></div>
-                                        <div class="col-1 col-md-2 "><label for="hf-email" class=" form-control-label">Valor Total:</label></div>
-                                        <div class="col-1 col-md-3"><input type="text" id="text-input" name="text-input" placeholder="6.600" class="form-control" readonly></div>
-                                    </div>
-                                    <div class="row form-group">
-                                        <div class="col-1 col-md-4 "></div><br>
-                                        <div class="col-1 col-md-2 "><label for="hf-email" class=" form-control-label">Iva:</label></div>
-                                        <div class="col-1 col-md-3"><input type="text" id="text-input" name="text-input" placeholder="1.254" class="form-control" readonly></div>
+                                        <div class="col-1 col-md-1 "><label for="select" class=" form-control-label">Estado:</label></div>
+                                        <div class="col-1 col-md-2">
+                                            <select name="select" id="select" class="form-control">
+                                                <option value="0">Inactivo</option>
+                                                <option value="1">Activo</option>
+                                            </select> <br><br><br>
+                                        </div>
                                     </div>
                                     <div class="row form-group">
                                         <div class="col-1 col-md-4 "></div>
-                                        <div class="col-1 col-md-2 "><label for="hf-email" class=" form-control-label"> Total Final:</label></div>
-                                        <div class="col-1 col-md-3"><input type="text" id="text-input" name="text-input" placeholder="7.754" class="form-control" readonly><br><br><br></div>
-                                    </div>
-                                    <div class="row form-group">
-                                        <div class="col-1 col-md-5 "></div>
                                         <div class="col-1 col-md-2">                          
-                                            <a href="compras-agregar.html"  title="Guardar" class="btn btn-dark btn-sm">Guardar</i></a>
+                                            <a href="Usuarios.html"  title="Guardar" class="btn btn-dark btn-sm">Guardar</i></a>
                                         </div>
                                         <div class="col-1 col-md-3"> 
-                                            <a href="compras-agregar.html"  title="Cancelar" class="btn btn-dark btn-sm">Cancelar</i></a>
+                                            <a href="Usuarios.html"  title="Cancelar" class="btn btn-dark btn-sm">Cancelar</i></a>
                                         </div>        
                                     </div>
                                 </form>
